@@ -1,4 +1,3 @@
-
 ## __Ponteiros e Listas Encadeadas__
 
 ### Coteúdos: Passaem de valor por referencia, Alocação diamica de um vetor com o tamanho definido em tempo de execução.
@@ -214,8 +213,10 @@ MongoDB, Cassandra, Redis, Neo4J.
 
 Machine larning também é da área de estrutura de dados. - (estudar sobre) aprendizagem supervisionada.
 
+__Conclusão:__ sempre consigo chegar a meta em `log(n,2)` passos, quanto maior o número mais rápido posso chegar ao resultado.
 
-🟡 Vai cair na prova [Algortmo de Busca Binária](/EDFatec/busca_binaria.py)
+
+🟡 Vai cair na prova [Algoritmo de Busca Binária](/EDFatec/busca_binaria.py) e [Adivinha um número entre 1 e 100](/EDFatec/Advinhando%20um%20número%20entre%201%20e%20100.py)
 
 #
 
@@ -225,7 +226,7 @@ __1- Busca sequencial__
  No pior caso vou demorar o tamanho do vetor, pois o número pode estar na última posião ou não estar armazenado no vetor.
 
 __2- Busca binária__  
-No pior caso vou demorar `log(n, 2)`. Dessa forma é muito mais rápida, porque eu usei um dado que tenho! O Vetor ordenado. 
+No pior caso vou demorar `log(n,2)`. Dessa forma é muito mais rápida, porque eu usei um dado que tenho! O Vetor ordenado. 
 
 Então podemos concluir que, vale a pena ordenar!  
 O mais interessante é que para ordenar um vetor existem algoritmos muito rápidos, e a maioría deles usa a mesma idéia de busca binaria.
@@ -370,11 +371,16 @@ __Custo total:__ n * log(n, 2), n passos para todos se compararem com o pivô lo
 __Conclusão__
 Quicksort é tão rápido quanto o mergesort mas tem a vantagem de não gastar o dobro de espaço, enquanto mergesort só dobra o número de posições ordenadas, quicksort soma com os anteriores 1 + 2 + 4 + 8 + 16 + ... + 
 
-[ALgoritmo do exemplo acima](/EDFatec/AlgoritmoasBonsERuins/quicksort.py) 
+[ALgoritmo do exemplo acima - Quicksort](/EDFatec/AlgoritmoasBonsERuins/quicksort.py) 
 
-<!--Tem outras formas ainda!
-posso andar no indice do vetor da seguinte forma: passo vai dobrando 2 4 6 8 16 32.... -->
+__Heapsort__ Usa estruturas internas que andam na lista com passos que vão dobrando a cada vez, ou seja, ando nos índies muito mais rápido.
+O mais rápido é o sort interno do Python, que é híbrido, se chama TIM sort.
 
-<!--__heapsort__ usa estruturas internas que andam na lista com passos que vão dobrando a cada vez, ou sej, ando nos índies muito mais rápido.
-O mais rápido é o sort interno do Python, que é híbrido, se chama TIM sort. -->
-  
+<!-- Comentários para estudar para a prova:
+1- Mergesort pode ser executada em paralelo, as duas metades sendo indepedendentes, podem ser executadas em paralelo. Preciso de um vetor auxiliar para unir as duas metades, logo preciso do dobro de espaço. (mergesort recursigo é menor que o interaativo, em questão de espaço)
+
+2- Quicksort - O pior caso do quicksort é um vetor ja ordenado, porque a cada passo não vai ningué para o lado dos menores, entáo vou demorar n passos para terminar, e como todos precisam se comarar com o pivô o custo total é de n*n = n **2, isso torna meu algoritmo tão ruim quanto o inserção e seleção.
+Porque isso é interessante? na prática é extremamente raro encontrar um vetor já ordenado para ser ordenado novamente . Mais ainda o número de pessoas na posição correta é acumulativo: 1 + 2 + 4 + 8 + 16 + 32 + ... + Não apenas dobra, mas acumula os anteriores
+__Conclusão:__ Não basta ver o pior caso, é muito mais interessante ver o caso médio.
+Por últimmo, para ver a eficiencia não basta testar somente para números pequenos, é sempre bom testar para números altos
+-->
