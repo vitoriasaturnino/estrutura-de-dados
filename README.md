@@ -1,6 +1,6 @@
 ## __Ponteiros e Listas Encadeadas__
 
-### Coteúdos: Passaem de valor por referencia, Alocação diamica de um vetor com o tamanho definido em tempo de execução.
+### Coteúdos: Passagem de valor por referencia, Alocação diamica de um vetor com o tamanho definido em tempo de execução.
 
 #
 
@@ -13,22 +13,30 @@ Uma função básicas na linguagem C de ponteiros é:
 
 regras: 
 
-1- Ponteiro e coisa pontada são duas coisas diferentes. (int k; int*p; p = &k;)
+1- Ponteiro e coisa pontada são duas coisas diferentes. 
+ex.: 
+```
+//váriável
+int k; 
+//ponteiro
+int*p;
+//ponteiro recebe o endereço de valor da váiável
+p = &k;
+```
 
 2- Não deve se usar um ponteiro que não aponta para nada.
 
-3- Vetores em C tem dados contíguos (um do dado do ladinho do outro), isso é bom para mover massas de dados, por exemplo a vantagem em termos de velocidade em games ou computação gráfica quando quero mover muitos dados mais rapidamente.
-porém para remover ou inserir alguém no início é muito ineficiente jé que, tería que empurar todos os outros elementos para a esquerda, mas para resolver esse problemas temos as listas encadeadas, para inserir ou remover no inicio.
+3- Vetores em C tem dados contíguos (um do dado do ladinho do outro), isso é bom para mover massas de dados, por exemplo a vantagem em termos de velocidade em games ou computação gráfica quando quero mover muitos dados mais rapidamente; porém, para remover ou inserir alguém no início é muito ineficiente já que, tería que empurar todos os outros elementos para a esquerda, mas para resolver esse problemas temos as listas encadeadas, para inserir ou remover no inicio.
 
 ```
 //13 7 -2 22 10 11 4 77 
 //inserir 42 no início
 
 int v[100] = {13, 7, -2, 22, 10, 11, 4, 77};
-for (k=0; k < 8; k++){
-  v[k+1] = v[k];
+for (i = 0; i < 8; i++){
+  v[i+1] = v[i];
 }
-v[0] = 42;
+i[0] = 42;
 ```
 Então como eu posso inserir 42 rapidamente em C no alto nível? Usando ponteiros! Pense no exemplo de caça ao tesouro, uma pista/ponta leva a outra. Com poteiros eu vou implementar uma estrutura de dados chamada Lista Encadeada ou Lista Ligada.
 
@@ -39,7 +47,7 @@ struct cel *seg; // seguinte
 }
 typedef struct cel celula;
 
-celula a ;
+celula a;
 celula *p;
 p = &a;
 a.conteudo = 42;
@@ -62,9 +70,9 @@ Programar em C tem muitos detahes para mehorar a eficiencia, porque C é baixo n
 
 O ato de inserir elementos na lista deve ser no ínicio, pois ter que andar até 
 até o final da lista torna o processo ineficiente.
-É conveniente ter uma CABEÇA  de lisa, que nada mais é que tratar a primeira célula da lista encadeada como um marcador de início e ignorar o conteúdo da célula. Assim podemos eviar que;
-1- Evita testes de listas vazias;
-2- Não preciso usar ponteio para ponteiros, porque se a lista estiver com NULL no começo, ao inserir o primero precisarei alterar  o ponteiro cmo o ponteiro é variável local, preciso passar o endereço dele para função insere, e dentro da função insere terei um ponteiro para ponteiro.
+É conveniente ter uma CABEÇA  de lisa, que nada mais é que tratar a primeira célula da lista encadeada como um marcador de início e ignorar o conteúdo da célula. Assim podemos eviar:
+1- Testar de listas vazias;
+2- Não preciso usar ponteio para ponteiros, porque se a lista estiver com NULL no começo, ao inserir o primero precisarei alterar  o ponteiro, como o ponteiro é variável local, preciso passar o endereço dele para função insere, e dentro da função insere terei um ponteiro para ponteiro.
 
 Ex.: [Lista ligada cira lista sem cabeça](/EDFatec/Códigos%20em%20C/Lista%20Ligada%20cria%20lista%20sem%20cabeça.c) e [Lista ligada cria lista com cabeça](/EDFatec/Códigos%20em%20C/Lista%20Ligada%20cria%20lista%20com%20cabeça.c).
 
