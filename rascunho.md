@@ -39,3 +39,41 @@ Existem dois grandes grpos de algoritmos de força bruta, que testam todos os su
 A pessoa recebeu vários cheques, e no final do mês deu negativo. Quais ps cheques que provavlmente não tinham fundo? Subconjuntos.
 
 exercíio programadores ep2 
+
+arvore binaria é igual a busca binária em termos de busca, log de n 2 passos, porém paa inserir ou remover no final é muito melhor pois uso ponteiros, e ainda tenho uma estrutura de dados ordenada, já que os números maiores ficam sempre armazenados a esquerda e os menores a direita.
+
+
+uma ávore binária é composta por nós e arcos, cada nó pode ser ligado a no máximo dois outros nós, os que estão a esquerda tem valor menor e os da direita valor maior em comparação ao seu nó pai
+um nó pode ter 0, 1 ou no máximo 2 filhos e os nós sem filhos são chamados de folhas
+o pimeiro nó é chamado de nó raiz
+
+A ávore binária é definida de forma recursiva, já que um nó root com dois filhos por sua vez, representam uma árvore binária que segue a mesma definiação. Cada nó pode ter seu filho da esquerda e da direita com um nó que pode originar duas novas árvores essa definião é valida recursivamente por toda a árvore
+
+Para calcular o número máximo de nós que uma árvore pode possuir devemos olhar seus níveis, pois em cada nível se tem o dobro de nós do nível anterior
+
+Como fazer iserção de elementos em uma árvore binária?
+É preciso verificar se há um nó raiz:
+    a - Caso não haja o primeiro elemento a ser inserido se tornará a raiz da árvore
+    b - Caso a raiz já exista é preciso verificar se o elemento a ser inserido é maior ou menor que ela.
+        1 - Se o elemento for menor que a raiz deve ser inserido a esquerda
+        2 -Se for menor, deve ser inserido a sua direita
+
+Aqui, mais uma vez podemos notar a recursividade, essa regra se repete em sucessão até que seja enontrda alguma árvore que não possua raiz
+
+Como deletar um elemento de um árvore binária?
+Regras para remoção de um nó:
+Caso 1 - O nó não tem filhos, nesse caso basta apenas deleta-lo sem consequencias
+Caso 2 - O nó possui apenas um único filho, devemos remover o pai e colocar o filho em seu lugar, possivelmente movendo também uma subárvore da qual esse nó é a raiz
+Caso 3 - O nó que deve ser deletado possui dois filhos, nesse caso temos duas opções:
+    a - Substitui-lo pelo maior número da subárvore da esquerda 
+    b - Subistituilo pelo menor número da subárvore da direita
+Depois dessa substituição é preciso remover o nó escolhido do lugar original e movelo para sua nova posição, dessa forma caímos de volta no caso 1 ou 2.
+
+
+
+
+
+
+
+
+
