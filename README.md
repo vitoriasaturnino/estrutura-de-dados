@@ -573,7 +573,9 @@ Fixando o número 4 e 3
 tenho 24 premutações para n = 4, que é o mesmo que n!
 ```
 
-[Exercício EP2 - Arthur Merlin Games]()
+## Para Treinar subconjuntos e permutações:
+
+[Exercício EP2 - Arthur Merlin Games](./EDFatec/EP2/ep2.py)
 
 #
 
