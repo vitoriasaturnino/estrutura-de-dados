@@ -635,21 +635,29 @@ O complementar de um grafo é definido pela letra G com uma barra em cima. Um gr
 
 ## Grafo do cavalo 3x3
 
-![grafo cavalo 3x3](./EDFatec/teoria_dos_grados/cavalo_3x3.jpg)
+<div aligin="center">
+  <img width=300px src="./EDFatec/teoria_dos_grados/cavalo_3x3.jpg">
+</di>
 
 ## Grafo do cavalo 3x3 Planar
 
-![grafo cavalo 3x3 planar](./EDFatec/teoria_dos_grados/cavalo_3x3_planar.jpg)
+<div aligin="center">
+  <img width=300px src="./EDFatec/teoria_dos_grados/cavalo_3x3_planar.jpg">
+</di>
 
 #
 
 ## Grafo do Cubo Q3
 
-![cubo Q3](./EDFatec/teoria_dos_grados/cubo_Q3.jpg)
+<div aligin="center">
+  <img width=300px src="./EDFatec/teoria_dos_grados/cubo_Q3.jpg">
+</di>
 
 ## Grafo do Cubo Q3 Planar
 
-![cubo Q planar3](./EDFatec/teoria_dos_grados/cubo_Q3_planar.jpg)
+<div aligin="center">
+  <img width=300px src="./EDFatec/teoria_dos_grados/cubo_Q3_planar.jpg">
+</di>
 
 ## Importante 📌
 
