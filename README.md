@@ -139,7 +139,7 @@ p.pop() para #remover elemento
 
 vetor[2, 5, 9, 12, 13, 13, 18, 21, 34, 41, 42, 54, 55, 58]
 
-1- busca sequencial (ver de um em um). Pior caso = está no final ou não existe, pois terei que percorrer todos os elementos.
+1- busca sequêncial (ver de um em um). Pior caso = está no final ou não existe, pois terei que percorrer todos os elementos.
 
 2- Poso fazer algo melhor utilizando o dado, isto é, já que o vetor esta em ordem.
 Uma lista telefonica tem os nomes em ordem alfabétida, se você precisa achar um nome que começa com F não tem necessidade de procurar nas outras letras.
@@ -239,7 +239,7 @@ Machine larning também é da área de estrutura de dados. - (estudar sobre) apr
 
 ## Existem duas duas formas de buscar um elemento em um vetor ordenado:
 
-**1- Busca sequencial**  
+**1- Busca sequêncial**  
  No pior caso vou demorar o tamanho do vetor, pois o número pode estar na última posião ou não estar armazenado no vetor.
 
 **2- Busca binária**  
@@ -411,7 +411,7 @@ Algoritmos de ordenação
 quero procurar uma palavra num texto
 Existem várias formas de fazer isso:
 
-1. Busca sequencial, comparo letra por letra até encontrar a posição correta se a frase tem n letras e a palavra tem m letras no pior caso vou gastar m \* n comparações
+1. Busca sequêncial, comparo letra por letra até encontrar a posição correta se a frase tem n letras e a palavra tem m letras no pior caso vou gastar m \* n comparações
 
 podemos usar o dado para fazer um algoritmo melhor. A frase não sei qual será mas já sei qual palavra estou procurando. Sabendo que da palavra que estou procurando, nesse caso "algoritmo" posso percorrer om passos mais largos, posso buscar ao contrário, por exemplo:
 sabendo de todas as letras pertencem a palavra posso continuar o pular a verificação de alguma palavra.
@@ -422,7 +422,7 @@ sabendo de todas as letras pertencem a palavra posso continuar o pular a verific
 
 [EP2](/EP2)
 
-1. sequencial, que tem n _ m passos xxxxxxxxxxxxxxxxxx@xxxxx
+1. sequêncial, que tem n _ m passos xxxxxxxxxxxxxxxxxx@xxxxx
    Supondo que faça a comparação de trás paa frente, então evou descobrir que não é a mesma palavra deoius de m comparações, e como tenho n caracteres, o total é n _ m
 
 2. a melhor forma é usar o DADO que temos, ou seja, a palavra que estou buscando, no caso "algoritmo" os alggoritmos de ordenação
@@ -434,7 +434,7 @@ Repare que o pior caso continua com n \* m comparações, exemplo do xxxx... , m
 1. a maior parte dos caracteres não az parte da palavra, que implica pulo grandes
 2. mesmo que faça parte sempre ganho pulos
 
-Esse problema nã serve só para buscar no texto, serve para ver sequencias de DNA no seu sequenciamento total, ou procurar assinatura de virus na memória ou no seu HD interno
+Esse problema nã serve só para buscar no texto, serve para ver sequências de DNA no seu sequênciamento total, ou procurar assinatura de virus na memória ou no seu HD interno
 
 -->
 
@@ -451,11 +451,11 @@ Existem dois grandes grupos de algoritmos de força bruta, que testam todos os s
 
 ## Exemplo de como calcular todos os subconjuntos de n
 
-> **Dica:** Ler a sequencia da esquerda pra direita
+> **Dica:** Ler a sequência da esquerda pra direita
 > <---------------------------------------
 
 ```
-Para Montar os Sub conjuntos é mais fácil se lermos a sequencia ao contrário, devemos montar cada sub conjunto até chegar a n, assim que estivermos no número máximo podemos remove-lo, somar +1 no seu antecessor e continuar montando subconjuntos até atingir novamente o valor de n e então repetir o processo (recursividade) até que só reste o valor de n como subconjunto
+Para Montar os Sub conjuntos é mais fácil se lermos a sequência ao contrário, devemos montar cada sub conjunto até chegar a n, assim que estivermos no número máximo podemos remove-lo, somar +1 no seu antecessor e continuar montando subconjuntos até atingir novamente o valor de n e então repetir o processo (recursividade) até que só reste o valor de n como subconjunto
 
 Exemplo 1: n = 4
 
@@ -581,34 +581,83 @@ tenho 24 premutações para n = 4, que é o mesmo que n!
 
 # Ávore Binária
 
-Árvore binaria funciona da mesma forma que a busca binária em termos de busca, o resultado pode ser encotrado em log de n 2 passos, porém para inserir ou remover no final é muito melhor pois uso ponteiros, e ainda tenho uma estrutura de dados ordenada, já que os números maiores ficam sempre armazenados a esquerda e os menores a direita.
+Árvore binaria funciona da mesma forma que a busca binária em termos de busca, o resultado pode ser encotrado em log n2 passos, porém para inserir ou remover no final é muito melhor pois uso ponteiros, e ainda tenho uma estrutura de dados ordenada, já que os números maiores ficam sempre armazenados a esquerda e os menores a direita.
 
-Uma ávore binária é composta por nós e arcos, cada nó pode ser ligado a no máximo dois outros nós, os que estão a esquerda tem valor menor e os da direita valor maior em comparação ao seu nó pai um nó pode ter 0, 1 ou no máximo 2 filhos e os nós sem filhos são chamados de folhas
-o pimeiro nó da árvore é denominado nó raiz.
+Uma ávore binária é composta por nós e arcos, cada nó pode ser ligado a no máximo dois outros nós, os que estão a esquerda tem valor menor e os da direita valor maior em comparação ao seu nó pai um nó pode ter 0, 1 ou no máximo 2 filhos e os nós sem filhos são chamados de folhas o pimeiro nó da árvore é denominado nó raiz.
 
-Uma ávore binária é definida de forma recursiva, já que um nó root com dois filhos por sua vez, representam uma árvore binária que segue a mesma definiação. Cada nó pode ter seu filho da esquerda e da direita com um nó que pode originar duas novas árvores essa definião é valida recursivamente por toda a árvore.
+Uma ávore binária é definida de forma recursiva, já que um nó root com dois filhos por sua vez, representam uma árvore binária que segue a mesma definiação. Cada nó pode ter seu filho da esquerda e da direita com um nó que pode originar duas novas árvores, esta definião é valida recursivamente por toda a árvore.
 
 Para calcular o número máximo de nós que uma árvore pode possuir devemos olhar seus níveis, pois em cada nível se tem o dobro de nós do nível anterior
 
 ### Como fazer iserção de elementos em uma árvore binária?
 
-É preciso verificar se há um nó raiz:  
-**1.** Caso não haja o primeiro elemento a ser inserido se tornará a raiz da árvore  
-**2.** Caso a raiz já exista é preciso verificar se o elemento a ser inserido é maior ou menor que ela.
+É preciso verificar se há um nó raiz:
+
+**1.** Caso não haja o primeiro elemento a ser inserido se tornará a raiz da árvore;  
+**2.** Caso a raiz já exista é preciso verificar se o elemento a ser inserido é maior ou menor que ela:
 
 - **a)** Se o elemento for menor que a raiz deve ser inserido a esquerda
-- **b)** Se for menor, deve ser inserido a sua direita
+- **b)** Se for maior, deve ser inserido a sua direita
 
-Aqui, mais uma vez podemos notar a recursividade, essa regra se repete em sucessão até que seja enontrda alguma árvore que não possua raiz
+Aqui, mais uma vez podemos notar a recursividade, essa regra se repete em sucessão até que seja encontrda alguma árvore que não possua raiz
 
-Como deletar um elemento de um árvore binária?  
+### Como deletar um elemento de um árvore binária?
+
 Regras para remoção de um nó:
 
-- **Caso 1** O nó não tem filhos, nesse caso basta apenas deleta-lo sem consequencias
-- **Caso 2** O nó possui apenas um único filho, devemos remover o pai e colocar o filho em seu lugar, possivelmente movendo também uma subárvore da qual esse nó é a raiz
-- **Caso 3** O nó que deve ser deletado possui dois filhos, nesse caso temos duas opções: - **a)** Substitui-lo pelo maior número da subárvore da esquerda - **b)** Subistituilo pelo menor número da subárvore da direita
-  Depois dessa substituição é preciso remover o nó escolhido do lugar original e movelo para sua nova posição, dessa forma caímos de volta no caso 1 ou 2.
+**1.** Caso o nó não tem filhos, nesse caso basta apenas deleta-lo sem consequências;  
+**2.** Caso o nó possui apenas um único filho, devemos remover o pai e colocar o filho em seu lugar, possivelmente movendo também uma subárvore da qual esse nó é a raiz;  
+**3.** Caso o nó que deve ser deletado possui dois filhos, nesse caso temos duas opções:
+
+- **a)** Substitui-lo pelo maior número da subárvore da esquerda;
+- **b)** Subistituilo pelo menor número da subárvore da direita. Depois dessa substituição é preciso remover o nó escolhido do lugar original e movelo para sua nova posição, dessa forma caímos de volta no caso 1 ou 2.
+
+### Pior caso de busca em uma árvore binária
+
+É quando tenho uma árvore desbalanciada com um dos galhos muito maior que o outro, já que desta forma não estaria jogando fora metada das minhas possibilidades na hora de realizar uma busca, isso tornaria meu algoritmo muito ruim.  
+Para resolver isso podemos remover elementos no meio da árvore,para torna-la mais balanceada.
+
+### Aplicação
+
+Índices de busca em bancos de dados.
 
 #
 
 # Teoria dos Grafos
+
+Um Grafo tem dois tipos de objetos, um conjunto de vértices e um conjunto de arestas. O que define um grafo são seus vértices e arestas, de forma que não há problema se existirem vértices isolados (que não fazem parte de uma aresta).  
+O conjunto de **arestas** de um grafo é denotado por **"E"** e o conjunto de **vertices** é denotado por **"V"**.  
+Arestas são um par não ordenados de vértices, ou seja, não importa a direção.
+
+Aqui vamos estudar somente **grafos simples** que são aqueles que não possuem arestas "paralelas", ou seja, não podem ter das arestas diferentes com o mesmo par de pontas. Além disso as duas pontas de qualquer aresta são diferentes, desta forma não há laços.
+
+O complementar de um grafo é definido pela letra G com uma barra em cima. Um grafico G barra tem os mesmos vértices, no entanto, onde tem arestas no original não tem no complementar e onde não tinha passa a ter. Um grafo completo também se ele tem todas as arestas ligadas.
+
+## Grafo do cavalo 3x3
+
+![grafo cavalo 3x3](./EDFatec/teoria_dos_grados/cavalo_3x3.jpg)
+
+## Grafo do cavalo 3x3 Planar
+
+![grafo cavalo 3x3 planar](./EDFatec/teoria_dos_grados/cavalo_3x3_planar.jpg)
+
+#
+
+## Grafo do Cubo Q3
+
+![cubo Q3](./EDFatec/teoria_dos_grados/cubo_Q3.jpg)
+
+## Grafo do Cubo Q3 Planar
+
+![cubo Q planar3](./EDFatec/teoria_dos_grados/cubo_Q3_planar.jpg)
+
+## Importante 📌
+
+Os dois grafos ilustrados acima tem propriedades raras, por isso são usados como entrada de algoritmos para validação.  
+Note que com a forma planar dos dois grafos resolvemos problemas apresentados anteriormente:
+
+- **Ciricuito Hamiltoniano**  
+  Com a sequência 3 A 2 D 1 C 4 B do grafo **Cavalo 3x3** e a sequência 000 010 011 111 110 100 101 001 do grafo **Cubo Q3** temos uma possível solução para a disposição dos cavaleiros ao redor da mesa da Távola Redonda.
+
+- **Emparelhamento Máximo**  
+  Casando | A3 | B4 | C2 | D1 | do grafo do **Cavalo 3x3** e | 000 casa com 001 | 010 casa com 011 | 100 casa com 101 | 111 casa com 110 | do grafo **Cubo Q3** eu obtenho o emparelhamento máximo casando todos os vértices, resolvendo assim o problema do casamento das damas da corte.
