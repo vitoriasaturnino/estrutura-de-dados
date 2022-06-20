@@ -633,30 +633,28 @@ Aqui vamos estudar somente **grafos simples** que são aqueles que não possuem 
 
 O complementar de um grafo é definido pela letra G com uma barra em cima. Um grafico G barra tem os mesmos vértices, no entanto, onde tem arestas no original não tem no complementar e onde não tinha passa a ter. Um grafo completo também se ele tem todas as arestas ligadas.
 
-## Grafo do cavalo 3x3
+<h2>Grafo do cavalo 3x3</h2>
 
 <div align="center">
-  <img width=500px src="./EDFatec/teoria_dos_grados/cavalo_3x3.jpg">
+  <img width=400px src="./EDFatec/teoria_dos_grados/cavalo_3x3.jpg">
 </di>
 
-## Grafo do cavalo 3x3 Planar
+<h2>Grafo do cavalo 3x3 Planar</h2>
 
 <div align="center">
-  <img width=500px src="./EDFatec/teoria_dos_grados/cavalo_3x3_planar.jpg">
+  <img width=400px src="./EDFatec/teoria_dos_grados/cavalo_3x3_planar.jpg">
 </di>
 
-#
-
-## Grafo do Cubo Q3
+<h2>Grafo do Cubo Q3</h2>
 
 <div align="center">
-  <img width=500px src="./EDFatec/teoria_dos_grados/cubo_Q3.jpg">
+  <img width=400px src="./EDFatec/teoria_dos_grados/cubo_Q3.jpg">
 </di>
 
-## Grafo do Cubo Q3 Planar
+<h2>Grafo do Cubo Q3 Planar</h2>
 
 <div align="center">
-  <img width=500px src="./EDFatec/teoria_dos_grados/cubo_Q3_planar.jpg">
+  <img width=400px src="./EDFatec/teoria_dos_grados/cubo_Q3_planar.jpg">
 </di>
 
 ## Importante 📌
