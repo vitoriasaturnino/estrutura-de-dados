@@ -1,3 +1,11 @@
+# Estrutura de Dados
+
+Repositório criado com as anotações das aulas de ED do 3º semestre - ADS
+
+Os exercícios e códigos de exemplificação são do **professor Fernando Masanori** e estão todos disponiveis em [bit.ly/PythonED](https://www.bit.ly/PythonED)
+
+#
+
 ## **Ponteiros e Listas Encadeadas**
 
 ### Coteúdos: Passagem de valor por referencia, Alocação diamica de um vetor com o tamanho definido em tempo de execução.
@@ -64,7 +72,7 @@ Em C, pra não escrever (*p). Se preferiu a seguinte sintaxe p->
 p->seg
 ```
 
-[Ex.:código da lista = lista ligada com cabeça e sem aloação dinamica](/EDFatec/Códigos%20em%20C/Lista%20Ligada%20com%20cabeça%20sem%20alocação%20dinâmica.c)
+[Ex.:código da lista = lista ligada com cabeça sem aloação dinamica](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AABdvNHpt9harvCeo9HN_qaxa/C%C3%B3digos%20em%20C?dl=0&lst=&preview=Lista+Ligada+com+cabe%C3%A7a+sem+aloca%C3%A7%C3%A3o+din%C3%A2mica.c)
 
 Em C posso alocar memória sem declarar variável, usando a função (**malloc** = memory allocator).
 Essa função vai devolver um ponteiro até acabar a memória, quando ela acaba ele devole **NULL**.
@@ -77,9 +85,9 @@ até o final da lista torna o processo ineficiente.
 1- Testar de listas vazias;
 2- Não preciso usar ponteio para ponteiros, porque se a lista estiver com NULL no começo, ao inserir o primero precisarei alterar o ponteiro, como o ponteiro é variável local, preciso passar o endereço dele para função insere, e dentro da função insere terei um ponteiro para ponteiro.
 
-Ex.: [Lista ligada cira lista sem cabeça](/EDFatec/Códigos%20em%20C/Lista%20Ligada%20cria%20lista%20sem%20cabeça.c) e [Lista ligada cria lista com cabeça](/EDFatec/Códigos%20em%20C/Lista%20Ligada%20cria%20lista%20com%20cabeça.c).
+Ex.: [Lista ligada cria lista sem cabeça](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAByivbPMxOIBwd2_XI9FA_Ea/C%C3%B3digos%20em%20C/Lista%20Ligada%20cria%20lista%20sem%20cabe%C3%A7a.c?dl=0) e [Lista ligada cria lista com cabeça](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAB72wMnTlD8luvT8WIjEjCLa/C%C3%B3digos%20em%20C/Lista%20Ligada%20cria%20lista%20com%20cabe%C3%A7a.c?dl=0).
 
-Na lista [Códigos em C](EDFatec/C%C3%B3digos%20em%20C/) vimos também muitos detalhes; um éxemplo é que como não temos indices como estamos acostmadas, precisamos devolver um ponteiro.
+Na lista [Códigos em C](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AABdvNHpt9harvCeo9HN_qaxa/C%C3%B3digos%20em%20C?dl=0&lst=) vimos também muitos detalhes; um éxemplo é que como não temos indices como estamos acostmadas, precisamos devolver um ponteiro.
 
 Concatena: preciso percorrer até o final paa achar a "liga".
 Libera : que eu preciso salvar o seguinte, antes de liberar a list para a memória.
@@ -88,9 +96,9 @@ como ele insere no inicio, para ficar igual preciso percorrer ao contrario
 Ex.: minha lista é = lista[3, 5, 10], para implementar em uma lista encadeada, nesta ordem, devo começar inserindo o último elemento, já que as inserções são feitas no fim da lista.
 
 > !DESAFIOS
-> Inverte e Josephus (vídeo no YT)
+> Inverte e Josephus [vídeo no YT](https://www.youtube.com/watch?v=M9LGhy_d6uI&list=PLUukMN0DTKCtdKaIUQoV4VWqGblYGZLfC&index=8)
 
-> Estudar pela [Lista de exercícios](</EDFatec/Lista%20de%20Exercícios%20Listas%20Encadeadas%20ED%202011-01%20(1).pdf>)
+> Estudar pela [Lista de exercícios](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AACj39w2hlsTWRi3wmicR3Zka/Lista%20de%20Exerc%C3%ADcios%20Listas%20Encadeadas%20ED%202011-01.pdf?dl=0)
 
 Sobre o código lista ligada sem cabeça:
 
@@ -99,7 +107,7 @@ Sobre o código lista ligada sem cabeça:
 
 ### 14/03
 
-[Slides apartir do slide 58](/EDFatec/SLIDES-A-handout.pdf)
+[Slides apartir do slide 58](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAAXsI4xZyS078Axd0WxpCSqa/SLIDES-A-handout.pdf?dl=0)
 
 ## **Filas** = FIFO = Fist In First Out.
 
@@ -131,7 +139,7 @@ p.append(x) #para acrescentar
 p.pop() para #remover elemento
 ```
 
-[Algoritmo do binário](/EDFatec/dec2binED.py)
+[Algoritmo do binário](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAA1Uwzd8-L4HlMNiwUFrOfda?dl=0&preview=dec2bin.py)
 
 #
 
@@ -159,7 +167,7 @@ O algoritmo de busca biária é como a invenção da roda no mundo da programaç
 Busca binária vale muito a pena para valores grandes.
 A ideia é simples, dividir o mundo em 2, porém a implementaçã demorou 17 anos.
 
-[Código de busca binária](/EDFatec/buscaBinaria.py)
+[Código de busca binária](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AACtyEHmjXPJqVuWev2deJ__a/busca_binaria.py?dl=0)
 
 Exemplo do prof.:
 
@@ -233,7 +241,7 @@ Machine larning também é da área de estrutura de dados. - (estudar sobre) apr
 
 **Conclusão:** sempre consigo chegar a meta em `log(n,2)` passos, quanto maior o número mais rápido posso chegar ao resultado.
 
-🟡 Vai cair na prova [Algoritmo de Busca Binária](/EDFatec/busca_binaria.py) e [Adivinha um número entre 1 e 100](/EDFatec/Advinhando%20um%20número%20entre%201%20e%20100.py)
+🟡 Vai cair na prova [Algoritmo de Busca Binária](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AACtyEHmjXPJqVuWev2deJ__a/busca_binaria.py?dl=0) e [Adivinha um número entre 1 e 100](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAAA6uBedLXLyeEPXfQF7LjVa/Advinhando%20um%20n%C3%BAmero%20entre%201%20e%20100.py?dl=0)
 
 #
 
@@ -250,8 +258,8 @@ O mais interessante é que para ordenar um vetor existem algoritmos muito rápid
 
 Vamos ver algoritmos de ordenação: 2 ruins e 3 bancos.
 
-- Algoritmos ruins: [inserção](/EDFatec/AlgoritmoasBonsERuins/inserção.py) e [seleção](/EDFatec/AlgoritmoasBonsERuins/seleção.py)
-- Aloritmos bons: [mergesort](/EDFatec/AlgoritmoasBonsERuins/mergesort.py), [quicksort](/EDFatec/AlgoritmoasBonsERuins/quicksort.py) e [heapsort](/EDFatec/AlgoritmoasBonsERuins/heapsort.py).
+- Algoritmos ruins: [inserção](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAB8GUBJKzjuCPWwV1_6RYS1a/inser%C3%A7%C3%A3o.py?dl=0) e [seleção](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAApzYohHM6pxF6llDQidmsca/sele%C3%A7%C3%A3o.py?dl=0)
+- Algoritmos bons: [mergesort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAAZj6dyA-QFmuGWfFgVm8W5a/mergesort.py?dl=0), [quicksort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AACf5OWW4JyOH8dMoEVKBp0aa/quicksort.py?dl=0) e [heapsort](/https://www.dropbox.com/sh/y9irhflkjlrvy2j/AADlLv9ojwXMSAFY4ABmF3gRa/heapsort.py?dl=0).
 
 ## Inserção
 
@@ -289,7 +297,7 @@ Nesse caso números grandes são bons e os pequenos muito ruins, pois tenho que 
 No pior caso, o número é muito pequeno e eu tenho que empurrar todos os outros.  
 Então no pior caso n \* n = n ** 2, como tenho também casos bons, na prática, vou demorar menos que n**2.
 
-Algoritmo do exemplo acima [inserção](/EDFatec/AlgoritmoasBonsERuins/inserção.py)
+Algoritmo do exemplo acima [inserção](/https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAB8GUBJKzjuCPWwV1_6RYS1a/inser%C3%A7%C3%A3o.py?dl=0)
 
 #
 
@@ -323,7 +331,7 @@ Vetor_Inicial = [0, 2, 4, 7, 3, 5, 6, 1]
 
 **Conclusão:** Gasto n passos para percorrer todos e sempre gasto mais n passos para achar o menor, no total gasto n\*n - n \*\* 2, n para descorir todos e n para descobri o min.
 
-[ALgoritmo do exemplo acima](/EDFatec/AlgoritmoasBonsERuins/seleção.py)
+Algoritmo do exemplo acima [seleção](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAApzYohHM6pxF6llDQidmsca/sele%C3%A7%C3%A3o.py?dl=0)
 
 - O `min()` que aparce no código é uma função do Python. (min com maconha kkkkkk)
 
@@ -378,7 +386,7 @@ Vetor ordenado = [0, 1, 2, 3, 4, 5, 6, 7]
 
 Muito importante Quando analisar um código, não olhar apenas o número de passos, mas também o espaço ocupado.
 
-[ALgoritmo do exemplo acima](/EDFatec/AlgoritmoasBonsERuins/mergesort.py)
+Algoritmo do exemplo acima - [Mergesort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAAZj6dyA-QFmuGWfFgVm8W5a/mergesort.py?dl=0)
 
 #
 
@@ -393,10 +401,16 @@ vou repetindo o processo em cada metade, então o número de voluntários(pivô)
 **Conclusão**
 Quicksort é tão rápido quanto o mergesort mas tem a vantagem de não gastar o dobro de espaço, enquanto mergesort só dobra o número de posições ordenadas, quicksort soma com os anteriores 1 + 2 + 4 + 8 + 16 + ... +
 
-[ALgoritmo do exemplo acima - Quicksort](/EDFatec/AlgoritmoasBonsERuins/quicksort.py)
+Algoritmo do exemplo acima - [Quicksort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AACf5OWW4JyOH8dMoEVKBp0aa/quicksort.py?dl=0)
 
-**Heapsort** Usa estruturas internas que andam na lista com passos que vão dobrando a cada vez, ou seja, ando nos índies muito mais rápido.
+#
+
+## Heapsort
+
+Usa estruturas internas que andam na lista com passos que vão dobrando a cada vez, ou seja, ando nos índies muito mais rápido.
 O mais rápido é o sort interno do Python, que é híbrido, se chama TIM sort.
+
+Algoritmo do exemplo acima - [Heapsort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AADlLv9ojwXMSAFY4ABmF3gRa/heapsort.py?dl=0)
 
 <!-- Comentários para estudar para a prova:
 1- Mergesort pode ser executada em paralelo, as duas metades sendo indepedendentes, podem ser executadas em paralelo. Preciso de um vetor auxiliar para unir as duas metades, logo preciso do dobro de espaço. (mergesort recursigo é menor que o interaativo, em questão de espaço)
@@ -437,8 +451,6 @@ Repare que o pior caso continua com n \* m comparações, exemplo do xxxx... , m
 Esse problema nã serve só para buscar no texto, serve para ver sequências de DNA no seu sequênciamento total, ou procurar assinatura de virus na memória ou no seu HD interno
 
 -->
-
-=================================================================================================
 
 #
 
@@ -575,7 +587,7 @@ tenho 24 premutações para n = 4, que é o mesmo que n!
 
 ## Para Treinar subconjuntos e permutações:
 
-[Exercício EP2 - Arthur Merlin Games](./EDFatec/EP2/ep2.py)
+[Exercício EP2 - Arthur Merlin Games](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AABzvUnRAOF9ttmV0bM29FjAa/EP2/ep2.py?dl=0)
 
 #
 
@@ -633,21 +645,21 @@ Aqui vamos estudar somente **grafos simples** que são aqueles que não possuem 
 
 O complementar de um grafo é definido pela letra G com uma barra em cima. Um grafico G barra tem os mesmos vértices, no entanto, onde tem arestas no original não tem no complementar e onde não tinha passa a ter. Um grafo completo também se ele tem todas as arestas ligadas.
 
-<h2>Grafo do cavalo 3x3</h2>
+<h2>Grafo do cavalo 3-por-3</h2>
 
-<img width=400px src="./EDFatec/teoria_dos_grados/cavalo_3x3.jpg">
+<img width=400px src="./grafos/cavalo_3-por-3.jpg">
 
-<h2>Grafo do cavalo 3x3 Planar</h2>
+<h2>Grafo do cavalo 3-por-3 Planar</h2>
 
-<img width=400px src="./EDFatec/teoria_dos_grados/cavalo_3x3_planar.jpg">
+<img width=400px src="./grafos/cavalo_3-por-3_planar.jpg">
 
-<h2>Grafo do Cubo Q3</h2>
+<h2>Grafo do Cubo 3</h2>
 
-<img width=400px src="./EDFatec/teoria_dos_grados/cubo_Q3.jpg">
+<img width=400px src="./grafos/cubo_k3.jpg">
 
-<h2>Grafo do Cubo Q3 Planar</h2>
+<h2>Grafo do Cubo 3 Planar</h2>
 
-<img width=400px src="./EDFatec/teoria_dos_grados/cubo_Q3_planar.jpg">
+<img width=400px src="./grafos/cubo_k3_planar.jpg">
 
 ## Importante 📌
 
@@ -655,21 +667,21 @@ Os dois grafos ilustrados acima tem propriedades raras, por isso são usados com
 Note que com a forma planar dos dois grafos resolvemos problemas apresentados anteriormente:
 
 - **Circuito Hamiltoniano**  
-  Com a sequência 3 A 2 D 1 C 4 B do grafo **Cavalo 3x3** e a sequência 000 010 011 111 110 100 101 001 do grafo **Cubo Q3** temos uma possível solução para a disposição dos cavaleiros ao redor da mesa da Távola Redonda.
+  Com a sequência 3 A 2 D 1 C 4 B do grafo **Cavalo 3-por-3** e a sequência 000 010 011 111 110 100 101 001 do grafo **Cubo k3** temos uma possível solução para a disposição dos cavaleiros ao redor da mesa da Távola Redonda.
 
 - **Emparelhamento Máximo**  
-  Casando | A3 | B4 | C2 | D1 | do grafo do **Cavalo 3x3** e | 000 casa com 001 | 010 casa com 011 | 100 casa com 101 | 111 casa com 110 | do grafo **Cubo Q3** eu obtenho o emparelhamento máximo casando todos os vértices, resolvendo assim o problema do casamento das damas da corte.
+  Casando | A3 | B4 | C2 | D1 | do grafo do **Cavalo 3-por-3** e | 000 casa com 001 | 010 casa com 011 | 100 casa com 101 | 111 casa com 110 | do grafo **Cubo k3** eu obtenho o emparelhamento máximo casando todos os vértices, resolvendo assim o problema do casamento das damas da corte.
 
-Com isso podemos conclcuir que desenhando o grafo de forma diferente podemos enxergar seu poder! Nos grafos Cavalo 3x3 e Cubo Q3 vimos que desenhando ele de uma forma planar eu consigo ver o circuito Hamiltoniano e tamém o emparelhamento.
+Com isso podemos conclcuir que desenhando o grafo de forma diferente podemos enxergar seu poder! Nos grafos Cavalo 3-por-3 e Cubo 3 vimos que desenhando ele de uma forma planar eu consigo ver o circuito Hamiltoniano e tamém o emparelhamento.
 
 ## Grafos Bipartidos
 
 Existem alguns grafos que podem ser divididos em dois conjuntos de vértices, os de cima e os de baixo, todos os vétices, os de cima e de baixo não possuem ligação entre si e todas as ligações saem de cima para baixo.  
-O Grafo do **Cavalo 3x3** também pode ser bipartido se colocarmos A B C e D embaixo e 1 2 3 e 4 em cima poderemos ver que não há ligação entre as letras nem entre os números e todas as ligaçõs partem de cima para baixo.
+O Grafo do **Cavalo 3-por-3** também pode ser bipartido se colocarmos A B C e D embaixo e 1 2 3 e 4 em cima poderemos ver que não há ligação entre as letras nem entre os números e todas as ligaçõs partem de cima para baixo.
 
-<h2>Grafo do cavalo 3x3</h2>
+<h2>Grafo do cavalo 3-por-3</h2>
 
-<img width=400px src="./EDFatec/teoria_dos_grados/grafo_biprtido_maquinas.jpg">
+<img width=400px src="./grafos/grafo_biprtido_maquinas.jpg">
 
 Aproximação, nem sempre consigo maior casamento possível porque a solução exata do emparelhamento é difícil de conseguir, a heurística uma aproximação e é uma heurística "gulosa" porque pega a máquina mais conveniente a cada passo, isto é, a que tem menos colaboradores capacitados.
 
