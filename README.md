@@ -654,8 +654,32 @@ O complementar de um grafo é definido pela letra G com uma barra em cima. Um gr
 Os dois grafos ilustrados acima tem propriedades raras, por isso são usados como entrada de algoritmos para validação.  
 Note que com a forma planar dos dois grafos resolvemos problemas apresentados anteriormente:
 
-- **Ciricuito Hamiltoniano**  
+- **Circuito Hamiltoniano**  
   Com a sequência 3 A 2 D 1 C 4 B do grafo **Cavalo 3x3** e a sequência 000 010 011 111 110 100 101 001 do grafo **Cubo Q3** temos uma possível solução para a disposição dos cavaleiros ao redor da mesa da Távola Redonda.
 
 - **Emparelhamento Máximo**  
   Casando | A3 | B4 | C2 | D1 | do grafo do **Cavalo 3x3** e | 000 casa com 001 | 010 casa com 011 | 100 casa com 101 | 111 casa com 110 | do grafo **Cubo Q3** eu obtenho o emparelhamento máximo casando todos os vértices, resolvendo assim o problema do casamento das damas da corte.
+
+Com isso podemos conclcuir que desenhando o grafo de forma diferente podemos enxergar seu poder! Nos grafos Cavalo 3x3 e Cubo Q3 vimos que desenhando ele de uma forma planar eu consigo ver o circuito Hamiltoniano e tamém o emparelhamento.
+
+## Grafos Bipartidos
+
+Existem alguns grafos que podem ser divididos em dois conjuntos de vértices, os de cima e os de baixo, todos os vétices, os de cima e de baixo não possuem ligação entre si e todas as ligações saem de cima para baixo.  
+O Grafo do **Cavalo 3x3** também pode ser bipartido se colocarmos A B C e D embaixo e 1 2 3 e 4 em cima poderemos ver que não há ligação entre as letras nem entre os números e todas as ligaçõs partem de cima para baixo.
+
+<h2>Grafo do cavalo 3x3</h2>
+
+<img width=400px src="./EDFatec/teoria_dos_grados/grafo_biprtido_maquinas.jpg">
+
+Aproximação, nem sempre consigo maior casamento possível porque a solução exata do emparelhamento é difícil de conseguir, a heurística uma aproximação e é uma heurística "gulosa" porque pega a máquina mais conveniente a cada passo, isto é, a que tem menos colaboradores capacitados.
+
+### Teorema de planaridade
+
+Um grafo é planar se ele não tem um subgrafor que é o K5 nem um K3,3.
+
+## Grafos Isomorfos
+
+Dois grafos são isoformos se tem a mesma estrutura (vértices e arestas).
+Como podemos saber se um grafo é isomorfo? Rotulando suas arestas.
+
+Grafos tem uma vantagem, é que a abstração é mais fácil por conta da vizualização, a desvantagem é que nem todos podem exergar isso tão trivialmente.
