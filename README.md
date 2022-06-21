@@ -297,7 +297,7 @@ Nesse caso números grandes são bons e os pequenos muito ruins, pois tenho que 
 No pior caso, o número é muito pequeno e eu tenho que empurrar todos os outros.  
 Então no pior caso n \* n = n ** 2, como tenho também casos bons, na prática, vou demorar menos que n**2.
 
-Algoritmo do exemplo acima [inserção](/https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAB8GUBJKzjuCPWwV1_6RYS1a/inser%C3%A7%C3%A3o.py?dl=0)
+Algoritmo do exemplo acima [inserção](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAB8GUBJKzjuCPWwV1_6RYS1a/inser%C3%A7%C3%A3o.py?dl=0)
 
 #
 
