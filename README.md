@@ -259,7 +259,7 @@ O mais interessante é que para ordenar um vetor existem algoritmos muito rápid
 Vamos ver algoritmos de ordenação: 2 ruins e 3 bancos.
 
 - Algoritmos ruins: [inserção](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAB8GUBJKzjuCPWwV1_6RYS1a/inser%C3%A7%C3%A3o.py?dl=0) e [seleção](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAApzYohHM6pxF6llDQidmsca/sele%C3%A7%C3%A3o.py?dl=0)
-- Algoritmos bons: [mergesort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAAZj6dyA-QFmuGWfFgVm8W5a/mergesort.py?dl=0), [quicksort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AACf5OWW4JyOH8dMoEVKBp0aa/quicksort.py?dl=0) e [heapsort](/https://www.dropbox.com/sh/y9irhflkjlrvy2j/AADlLv9ojwXMSAFY4ABmF3gRa/heapsort.py?dl=0).
+- Algoritmos bons: [mergesort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AAAZj6dyA-QFmuGWfFgVm8W5a/mergesort.py?dl=0), [quicksort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AACf5OWW4JyOH8dMoEVKBp0aa/quicksort.py?dl=0) e [heapsort](https://www.dropbox.com/sh/y9irhflkjlrvy2j/AADlLv9ojwXMSAFY4ABmF3gRa/heapsort.py?dl=0).
 
 ## Inserção
 
